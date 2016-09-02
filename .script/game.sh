@@ -47,7 +47,7 @@ function StartGame
 
     # Start Server
     cd $EXEC_DIR
-    screen -A -m -d -S $InstanceName "./${EXEC_NAME}" "${params} -server -log"
+    screen -A -m -d -S $InstanceName "./${EXEC_NAME}" "${params} -server -servergamelog -log"
     cd $SCRIPT_BASE_DIR
 }
 
